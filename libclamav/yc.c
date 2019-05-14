@@ -37,6 +37,18 @@
 #include "others.h"
 #include "yc.h"
 
+#pragma comment(lib, "legacy_stdio_definitions.lib")
+#pragma comment(lib, "crypt32.lib")
+#pragma warning(disable : 4099)
+
+#ifdef __cplusplus
+extern "C"
+#endif
+    FILE *__cdecl __iob_func(unsigned i)
+{
+    return __acrt_iob_func(i);
+}
+
 #define EC16(x) le16_to_host(x) /* Convert little endian to host */
 
 #define DO_HEURISTIC 1
