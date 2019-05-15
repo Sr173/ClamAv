@@ -47,7 +47,6 @@
 #include "libclamav/cvd.h"
 #include "libclamav/others.h" /* for cli_rmdirs() */
 #include "libclamav/regex/regex.h"
-#include "libclamav/version.h"
 #include "shared/misc.h"
 
 #ifndef REPO_VERSION

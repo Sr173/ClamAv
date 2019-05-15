@@ -1,5 +1,4 @@
 #include <winver.h>
-#include "../libclamav/version.h"
 #ifndef REPO_VERSION
 #define __PLATFORM_H
 #include "clamav-config.h"
